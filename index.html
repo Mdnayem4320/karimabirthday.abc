@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Karima</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0c20;--pink:#ff2e93;--neon:#ff5fb8;--rose:#f2b6a8;--text:#f6e9f2;--glass:linear-gradient(135deg,rgba(255,255,255,.09),rgba(255,46,147,.06));--line:rgba(242,182,168,.28);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:radial-gradient(circle at 20% 0%,#2a1245 0,transparent 50%),radial-gradient(circle at 90% 60%,#3a0f33 0,transparent 45%),var(--bg);color:var(--text);font:400 16px/1.7 Poppins,"Hind Siliguri",system-ui,sans-serif;min-height:100%;overflow-x:hidden}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+.hearts{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.hearts span{position:absolute;bottom:-40px;color:var(--pink);opacity:.7;text-shadow:0 0 12px var(--neon);animation:rise linear forwards}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+main{position:relative;z-index:3;max-width:860px;margin:0 auto;padding:16px 16px 40px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 0}
+.bar small{color:var(--rose);letter-spacing:.15em;text-transform:uppercase;font-size:11px}
+button{font:inherit;cursor:pointer;border:0;color:#fff}
+.music{background:var(--glass);border:1px solid var(--line);border-radius:999px;padding:8px 16px;backdrop-filter:blur(10px)}
+.hero{text-align:center;padding:48px 8px 28px}
+h1{font:900 clamp(2rem,8vw,4.2rem)/1.15 "Playfair Display",Georgia,serif;margin:0;background:linear-gradient(90deg,#ff2e93,#f2b6a8,#ff5fb8,#ffd6e8,#ff2e93);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:flow 6s linear infinite;filter:drop-shadow(0 0 18px rgba(255,46,147,.65))}
+@keyframes flow{to{background-position:300% 0}}
+.hero p{color:var(--rose);margin:14px 0 0;font-weight:300;letter-spacing:.08em}
+.card{background:var(--glass);border:1px solid var(--line);border-radius:22px;padding:22px;margin:22px 0;backdrop-filter:blur(14px);box-shadow:0 10px 40px rgba(0,0,0,.45),0 0 30px rgba(255,46,147,.12);animation:fade .9s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(24px)}}
+h2{font:700 1.5rem "Playfair Display",Georgia,serif;margin:0 0 14px;color:var(--rose);text-shadow:0 0 14px rgba(255,46,147,.5)}
+.tabs{display:flex;gap:8px;margin-bottom:16px}
+.tab{flex:1;padding:10px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid var(--line)}
+.tab.on{background:linear-gradient(135deg,var(--pink),#b76e79);box-shadow:0 0 18px rgba(255,46,147,.6)}
+.letter{display:none}.letter.on{display:block;animation:fade .6s ease both}
+.letter p{margin:0 0 14px}
+.bn{font-family:"Hind Siliguri",Poppins,sans-serif;font-size:17px}
+.rate{margin-top:20px;padding-top:18px;border-top:1px dashed var(--line);text-align:center}
+.rate b{display:block;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.chip{background:rgba(255,46,147,.2);border:1px solid var(--pink);border-radius:999px;padding:9px 18px;transition:.2s}
+.chip:hover{background:var(--pink);box-shadow:0 0 16px var(--pink)}
+#thanks{min-height:1.7em;margin-top:12px;color:var(--rose)}
+.gift{text-align:center}
+.gift h2{font-size:1.4rem}
+.btns{position:relative;min-height:120px;display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap}
+.yes,.no,.go{border-radius:999px;padding:13px 34px;font-weight:600;font-size:1.05rem}
+.yes,.go{background:linear-gradient(135deg,var(--pink),#ff7ab8);box-shadow:0 0 24px rgba(255,46,147,.7);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{transform:scale(1.07)}}
+.no{background:#241d3d;border:1px solid var(--line);transition:left .25s,top .25s;z-index:30}
+textarea{width:100%;min-height:110px;border-radius:14px;border:1px solid var(--line);background:rgba(0,0,0,.35);color:var(--text);padding:14px;font:inherit;resize:vertical}
+textarea:focus{outline:2px solid var(--pink)}
+.save{margin-top:12px;background:linear-gradient(135deg,var(--pink),#b76e79);border-radius:14px;padding:11px 26px;font-weight:600}
+#list{list-style:none;padding:0;margin:16px 0 0}
+#list li{background:rgba(255,255,255,.06);border-left:3px solid var(--pink);border-radius:10px;padding:10px 14px;margin-bottom:8px;overflow-wrap:anywhere}
+.ov{position:fixed;inset:0;background:rgba(5,3,15,.8);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.ov.show{display:flex}
+.dlg{background:#1a1233;border:1px solid var(--pink);border-radius:24px;padding:28px;max-width:420px;text-align:center;box-shadow:0 0 50px rgba(255,46,147,.5);animation:fade .5s ease both}
+.dlg a{display:block;text-decoration:none;color:#fff;margin-top:12px}
+.dlg .call{background:rgba(255,255,255,.1);border:1px solid var(--line);border-radius:999px;padding:12px;font-weight:600}
+.dlg .go{animation:none}
+.close{margin-top:14px;background:none;color:var(--rose);text-decoration:underline}
+footer{position:relative;z-index:3;text-align:center;padding:26px 16px 34px;color:var(--rose);border-top:1px solid var(--line);font-size:14px;letter-spacing:.04em}
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas>
+<div class="hearts" id="hearts"></div>
+<main>
+<div class="bar"><small>A little surprise</small><button class="music" id="music">🔇 Music</button></div>
+
+<section class="hero">
+<h1>✨ Happy Birthday Karima ✨</h1>
+<p>Today is all about you 🎂</p>
+</section>
+
+<section class="card">
+<h2>💌 A Letter For You</h2>
+<div class="tabs"><button class="tab on" data-t="en">English</button><button class="tab" data-t="bn">বাংলা</button></div>
+<div class="letter on" id="en">
+<p>Dear Karima, How’re you? I hope you will good. Today is one of the most beautiful days of your life. I hope you remember it. Actually, I’ve been walking alongside you for a few years now, but up until today, I’ve never wished you a happy birthday—even though you always remembered mine. I hope you won’t forget to give me a birthday treat (just kidding!).</p>
+<p>We’ve had so many moments of laughter, happiness, anger, and plenty of arguments. But there’s still one thing I really like about you: you are different from others. Even though I haven’t talked to anyone else up until now, from what I’ve seen, you stand out. You start the arguments yourself, you stop talking yourself, and then you message again yourself—I honestly love that about you.</p>
+<p>And please don’t think that I’m starting this all over again just to disrupt your studies. Don’t think that. I truly hope you can achieve something in life that no one ever expected you could—going much further than anyone imagines. And yes, I always pray that you remain safe from all dangers and that all your heartfelt wishes come true.</p>
+<p>Also, please pray for me too, so that I can accomplish something in the near future. It wouldn’t be fair if I took all the prayers for myself, right? So please spare a few prayers for me as well. And as long as I am around, or until you get married—meaning whenever you feel you might need any help from me—just let me know. Because once you’re married, you probably won’t even remember me, which is why I’m mentioning it now! I pray that all your struggles and hardships pay off one day. Happy Birthday! Happy Download Day 🎂🎂🎂 (And yes, you have to accept some kind of gift this time—keep that in mind, otherwise... well, seriously!)</p>
+</div>
+<div class="letter bn" id="bn">
+<p>প্রিয় কারিমা, কেমন আছ? আশা করি ভালো আছ। আজকের দিনটি তোমার জীবনের অন্যতম সুন্দর একটি দিন, আশা করি তোমার মনে আছে! সত্যি বলতে, গত কয়েক বছর ধরে তোমার সাথে পথ চলছি, কিন্তু এতদিন কখনোই তোমাকে জন্মদিনের শুভেচ্ছা জানানো হয়নি—যদিও তুমি সবসময় আমার জন্মদিন মনে রাখতে। আশা করি জন্মদিনের ট্রিট দিতে ভুলবে না (মজা করলাম!)।</p>
+<p>আমাদের মধ্যে অনেক হাসিখুশি, আনন্দ, রাগ আর প্রচুর তর্ক-বিতর্কের মুহূর্ত গেছে। তবে তোমার একটা জিনিস আমার সত্যিই খুব পছন্দ—তুমি সবার চেয়ে আলাদা। আমি হয়তো অন্য কারো সাথে কথা বলিনি, কিন্তু যা দেখেছি তাতে তুমি সত্যি ইউনিক। তুমি নিজেই তর্ক শুরু করো, নিজেই কথা বলা বন্ধ করো, আবার নিজেই মেসেজ দাও—তোমার এই স্বভাবটাই আমার ভীষণ প্রিয়!</p>
+<p>আর দয়া করে ভেবো না যে তোমার পড়াশোনায় ব্যাঘাত ঘটাতে আমি আবার নতুন করে সবকিছু শুরু করছি। আমি সত্যি মন থেকে চাই তুমি জীবনে এমন কিছু করে দেখাও যা কেউ কখনো কল্পনাও করেনি—সবার ধারণার চেয়েও অনেক দূর এগিয়ে যাও। সব বিপদ-আপদ থেকে তুমি নিরাপদে থাকো আর তোমার সব মনের আশা পূরণ হোক, এটাই সবসময় দোয়া করি।</p>
+<p>আমার জন্যও একটু দোয়া করো যেন খুব শিগগিরই ভালো কিছু করতে পারি। একা একা সব দোয়া নিয়ে নেওয়া তো ঠিক না, তাই না? তাই আমার জন্যও কিছু দোয়া রেখো। আর আমি যতদিন আছি, বা তোমার বিয়ে হওয়ার আগে পর্যন্ত—মানে যেকোনো দরকারে সাহায্য লাগলে আমাকে নির্দ্বিধায় জানিও। কারণ বিয়ের পর তো হয়তো আমাকে মনেও রাখবে না, তাই এখনই বলে রাখলাম! দোয়া করি তোমার সব কষ্ট আর সংগ্রাম একদিন সার্থক হোক। শুভ জন্মদিন! হ্যাপি ডাউনলোড ডে! 🎂🎂🎂 (আর হ্যাঁ, এবার কিন্তু তোমাকে উপহার নিতেই হবে—মনে রেখো, নাহলে কিন্তু... ব্যাস, সিরিয়াসলি!)</p>
+</div>
+<div class="rate bn"><b>উইশ বা শুভেচ্ছা বার্তাটি তোমার কেমন লেগেছে?</b>
+<div class="chips"><button class="chip" data-r="অনেক দারুণ! ❤️">অনেক দারুণ! ❤️</button><button class="chip" data-r="খুবই মিষ্টি 😊">খুবই মিষ্টি 😊</button><button class="chip" data-r="অনেক ভালো লেগেছে ✨">অনেক ভালো লেগেছে ✨</button></div>
+<div id="thanks"></div></div>
+</section>
+
+<section class="card gift bn">
+<h2>🎁 আমার কাছ থেকে গিফট নেবে কি?</h2>
+<div class="btns" id="btns"><button class="yes" id="yes">Yes 💖</button><button class="no" id="no">No</button></div>
+</section>
+
+<section class="card">
+<h2>🌠 Make a Wish</h2>
+<textarea id="w" maxlength="500" placeholder="Write your birthday wish here…"></textarea>
+<button class="save" id="save">Save Wish ✨</button>
+<ul id="list"></ul>
+</section>
+</main>
+
+<div class="ov" id="ov"><div class="dlg bn">
+<h2>ধন্যবাদ! 🎉</h2>
+<p>গিফট নেওয়ার জন্য ধন্যবাদ! এখনই WhatsApp খোলা হচ্ছে…</p>
+<a class="go yes" id="sms" href="https://wa.me/8801747728113?text=Hey!%20I%20accepted%20your%20birthday%20gift!%20%F0%9F%8E%81">💬 WhatsApp এ মেসেজ পাঠাও</a>
+<a class="call" href="tel:01747728113">📞 সরাসরি কল করো (01747728113)</a>
+<button class="close" id="close">বন্ধ করো</button>
+</div></div>
+
+<footer>Created with ❤️ by Naeem | © All Rights Reserved</footer>
+
+<script>
+const $=s=>document.querySelector(s),cv=$("#fx"),cx=cv.getContext("2d");
+let P=[],W,H;
+function size(){W=cv.width=innerWidth;H=cv.height=innerHeight}
+size();addEventListener("resize",size);
+const COL=["#ff2e93","#ff5fb8","#f2b6a8","#ffd6e8","#ffffff","#ff9ecb","#c9748a"];
+function burst(x,y,n=70){
+  for(let i=0;i<n;i++){const a=Math.random()*6.283,s=Math.random()*6+1.5;
+    P.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,g:.07,l:1,d:.012+Math.random()*.012,r:1.5+Math.random()*2,c:COL[Math.random()*COL.length|0]})}
+}
+function confetti(n=110){
+  for(let i=0;i<n;i++)P.push({x:Math.random()*W,y:-10-Math.random()*H*.4,vx:Math.random()*2-1,vy:2+Math.random()*3,g:.01,l:1,d:.004,r:4+Math.random()*4,c:COL[Math.random()*COL.length|0],sq:1})
+}
+function show(){
+  burst(W*(.2+Math.random()*.6),H*(.15+Math.random()*.3));chime([660,880,1100]);
+}
+(function loop(){
+  cx.globalCompositeOperation="destination-out";cx.fillStyle="rgba(0,0,0,.22)";cx.fillRect(0,0,W,H);
+  cx.globalCompositeOperation="lighter";
+  P=P.filter(p=>p.l>0&&p.y<H+20);
+  for(const p of P){p.vy+=p.g;p.x+=p.vx;p.y+=p.vy;p.l-=p.d;cx.globalAlpha=Math.max(p.l,0);cx.fillStyle=p.c;
+    if(p.sq)cx.fillRect(p.x,p.y,p.r,p.r*1.6);else{cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.283);cx.fill()}}
+  cx.globalAlpha=1;requestAnimationFrame(loop)
+})();
+
+/* audio */
+let ac,musicOn=false,mt,step=0;
+function ctx(){try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();if(ac.state==="suspended")ac.resume()}catch(e){}return ac}
+function tone(f,t0,d,v,type){const a=ctx();if(!a)return;const o=a.createOscillator(),g=a.createGain();o.type=type||"sine";o.frequency.value=f;
+  g.gain.setValueAtTime(0,a.currentTime+t0);g.gain.linearRampToValueAtTime(v,a.currentTime+t0+.02);g.gain.exponentialRampToValueAtTime(.001,a.currentTime+t0+d);
+  o.connect(g);g.connect(a.destination);o.start(a.currentTime+t0);o.stop(a.currentTime+t0+d+.05)}
+function chime(fs){fs.forEach((f,i)=>tone(f,i*.12,.7,.12))}
+const MEL=[523,523,587,523,698,659,523,523,587,523,784,698,523,523,1047,880,698,659,587,932,932,880,698,784,698];
+function music(){tone(MEL[step%MEL.length],0,.5,.07,"triangle");step++}
+$("#music").onclick=()=>{musicOn=!musicOn;ctx();$("#music").textContent=musicOn?"🔊 Music":"🔇 Music";
+  clearInterval(mt);if(musicOn)mt=setInterval(music,480)};
+let armed=false;
+function first(){if(armed)return;armed=true;ctx();confetti();burst(W/2,H/3,100);chime([523,659,784,1047])}
+["pointerdown","keydown","touchstart"].forEach(e=>addEventListener(e,first,{once:true,passive:true}));
+
+/* load celebration */
+try{burst(W*.3,H*.3,90);setTimeout(()=>burst(W*.7,H*.25,90),400);setTimeout(()=>burst(W*.5,H*.4,110),800);confetti();chime([523,659,784,1047])}catch(e){}
+let fw=0;const fi=setInterval(()=>{show();if(++fw>8)clearInterval(fi)},900);
+
+/* hearts */
+setInterval(()=>{const s=document.createElement("span");s.textContent=["♥","💖","💗","✨"][Math.random()*4|0];
+  s.style.left=Math.random()*100+"%";s.style.fontSize=12+Math.random()*22+"px";s.style.animationDuration=6+Math.random()*6+"s";
+  $("#hearts").appendChild(s);setTimeout(()=>s.remove(),12500)},650);
+
+/* tabs */
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll(".tab,.letter").forEach(e=>e.classList.remove("on"));b.classList.add("on");$("#"+b.dataset.t).classList.add("on")});
+
+/* rating */
+document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{
+  $("#thanks").textContent="তোমার মতামতের জন্য ধন্যবাদ! "+b.dataset.r;burst(W/2,H/2,80);chime([784,988,1175])});
+
+/* gift */
+const no=$("#no");
+function run(e){e.preventDefault();e.stopPropagation();
+  no.style.position="fixed";
+  no.style.left=Math.max(8,Math.random()*(innerWidth-no.offsetWidth-16))+"px";
+  no.style.top=Math.max(8,Math.random()*(innerHeight-no.offsetHeight-16))+"px"}
+["pointerenter","pointerdown","click"].forEach(t=>no.addEventListener(t,run));
+no.addEventListener("touchstart",run,{passive:false});
+$("#yes").onclick=()=>{$("#ov").classList.add("show");confetti(160);burst(W/2,H/3,120);chime([523,659,784,1047,1319]);
+  setTimeout(()=>{if($("#ov").classList.contains("show"))location.href=$("#sms").href},1800)};
+$("#close").onclick=()=>$("#ov").classList.remove("show");
+
+/* wishes */
+const KEY="karima-wishes";let wishes=[];
+try{wishes=JSON.parse(localStorage.getItem(KEY)||"[]")}catch(e){}
+function draw(){const u=$("#list");u.innerHTML="";wishes.forEach(t=>{const li=document.createElement("li");li.textContent="🌟 "+t;u.appendChild(li)})}
+draw();
+$("#save").onclick=()=>{const t=$("#w").value.trim();if(!t)return $("#w").focus();
+  wishes.unshift(t);try{localStorage.setItem(KEY,JSON.stringify(wishes))}catch(e){}
+  $("#w").value="";draw();confetti(90);burst(W*.3,H*.4,80);burst(W*.7,H*.4,80);chime([659,784,988,1319])};
+</script>
+</body>
+</html>
